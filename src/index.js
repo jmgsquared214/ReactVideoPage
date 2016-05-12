@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
 
-import App from './components/app';
-import reducers from './reducers';
+import SearchBar from 'search_bar';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const API_KEY = 'AIzaSyANVl3QA0_NWKwmWPpUVAls4clg_zkX7mY';
 
-ReactDOM.render(
-    <Provider store={createStoreWithMiddleware(reducers)}>
-        <App />
-    </Provider>
-, document.querySelector('.container'));
+const App = () => {
+    return <div>VideoPage</div>;
+}
+
+ReactDOM.render(<App />, document.querySelector('.container'))
